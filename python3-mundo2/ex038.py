@@ -6,14 +6,14 @@
 # - 0 segundo valor é maior
 # - Não existe valor maior, os dois são iguais
 
-n1 = int(input('\033[1;31m Primeiro\033[m número: '))
+n1 = int(input('\033[1;31m Primeiro\033[m\033[m número: '))
 n2 = int(input('\033[1;34m Segundo\033[m número: '))
 if n1 > n2:
-    print('O\34033[1;31m PRIMEIRO\033[m valor é maior')
+    print('O\033[1;31m PRIMEIRO\033[m valor é maior')
 elif n2 > n1:
     print('O\033[1;34m SEGUNDO\033[m valor é maior ')
 else:
-    print('Os dois valores são IGUAIS!')
+    print('Os dois valores são\033[1;31m IGUAIS \033[m!')
 
 # \033[0;33;44m
 
