@@ -8,5 +8,9 @@
 
 n1 = int(input('Primeira nota: '))
 n2 = int(input('Segunda nota: '))   
-media = n1 + n2 / 2
+media = (n1 + n2) / 2
 print('A media é {}'.format(media))
+if media < 5.0:
+    print('O aluno está reprovado!')
+elif media in 5 or 6.9:
+    print('O aluno fará recuperação!')
