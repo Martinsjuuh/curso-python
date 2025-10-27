@@ -22,10 +22,13 @@ elif opçao == 2:
 elif opçao == 3:
     total = compras
     parcelas = total / 2
-    print('Sua compra será parcelada em 2x de R${:.2f}'.format(parcelas))
+    print('Sua compra será parcelada em 2x de R${:.2f} SEM JUROS'.format(parcelas))
 elif opçao == 4:
     total = compras + (compras  * 20 / 100)
-    totparc = int(input('quantas parcelas '))
+    totparc = int(input('Quantas parcelas? '))
     parcelas = total / totparc
-    print('Sua compra de R$')
+    print('Sua compra será parcelada em {}x de R${:.2f} COM JUROS'.format(totparc, parcelas))
+else:
+    total = compras
+    print('\033[0;31mOPÇÃO INVÁLIDA de pagamento. Tente novamente!\033[m')
 print('Sua compra de R${:.2f} vai custar R${:.2f} no final.'.format(compras, total))
